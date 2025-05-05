@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      flutter_api_generator|flutter_api:
+        generate_for:
+          - "**/**.api.dart"

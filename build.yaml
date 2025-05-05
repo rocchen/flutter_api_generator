@@ -1,0 +1,9 @@
+
+builders:
+  flutter_api:
+    import: "package:flutter_api_generator/generator/builder.dart"
+    builder_factories: ["httpApiBuilder"]
+    build_extensions: { ".dart": [".flutter_api.g.part"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
